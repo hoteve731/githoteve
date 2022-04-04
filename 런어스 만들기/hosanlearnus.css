@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+p{
+    font-weight: lighter;
+    margin: 30px;
+}
+
+.header-item{
+    color: white;
+    margin: 3px;
+    background-color: blue;
+    border-radius: 4px;
+    float: right;
+}
+
+.header{
+    height: 30px;
+    background-color: rgb(169, 169, 230);
+    padding: 10px;
+}
+.navname{
+    color: white;
+    margin: 10px;
+    margin-right: auto;
+}
+.nav-item{
+    text-align: right;
+    color: white;
+    margin: 10px;
+    margin-left: auto;
+}
+
+.nav{
+    background-color: rgb(9, 9, 58);
+    height: 40px;
+    padding: 20px;
+    display: flex
+    
+}
+
+
+.announce{
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.announcetitle{
+    font-size: 20px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.announceevent{
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.announcetext{
+    float: left;
+}
+
+.announcedate{
+    float: right;
+}
+
+.announcements{
+    display: flex
+}
+
+.searchbar{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 90px;
+    background-color: yellow;
+    box-shadow: 0px 1px 10px 3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+.textareasize{
+    height: 30px;
+    width: 400px;
+}
+
+.searchbutton{
+    width: 100px;
+    height: 30px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.class{
+    margin-bottom: 30px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    border: 0px solid rgb(153, 153, 153);
+    box-shadow: 0px 1px 20px 3px rgba(0,0,0,0.1);
+}
+
+.classflex{
+    display: flex
+    
+}
+
+.classcolor{
+    text-align: center;
+    background-color: rgb(166, 179, 179);
+    padding: 10px;
+}
+
+.classtitle{
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+
+footer {
+    display: flex;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+ }
+
+ .footertitle{
+     font-style: bold;
+     font-size: 20px;
+     padding: 5px;
+     text-align: left;
+ }
+
+
+ .footertext{
+    color: white;
+    margin: 10px;
+    float: right;
+}
+
+.footertextright{
+    margin-left: auto;
+}
+
+.learnusimg{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.learnusimg2{
+    max-width: 100%;
+    height: auto;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 50px;
+    color: white;
+    background-color: blue;
+
+}
