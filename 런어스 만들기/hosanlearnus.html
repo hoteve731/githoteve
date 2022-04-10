@@ -1,218 +1,163 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearnUs</title>
     <link rel="stylesheet" href="hosanlearnus.css">
+    
 </head>
-
 <body>
-        <div class="header">
-            
-            <span class="header-item">로그인</span>
-            <span class="header-item">회원가입</span>
-            <span class="header-item">
-                <select class="lag" name="lag">
-                    <option value="">언어선택</option>
-                    <option value="한국어">한국어</option>
-                    <option value="영어">영어</option>
-                    <option value="기타">기타</option>
-                </select>
-            </span>
-            
+    <nav class="navbar1">
+        <select class="select">
+            <option> 한국어(ko) </option>
+            <option> 영어(en) </option>
+        </select>
+        <ul class="navbar1_menu">
+            <span class="n1_menu1"><li><a href="#">회원가입</a></li></span>
+            <span class="n1_menu2"><li><a href="#">로그인</a></li></span>
+        </ul>
+    </nav>
+
+    <nav class="navbar">
+        <div class="navbar_logo">
+          <a>LearnUs</a>
         </div>
-       
-       
-        <div class="nav">
-            <div class="navname">
-                LearnUs
-            </div>
-           <div class="nav-item">전문과정</div>
-           <div class="nav-item">공개과정</div>
-           <div class="nav-item">국제과정</div>
-           <div class="nav-item">학위과정</div>
-           <div class="nav-item">이용안내</div>
-           <div class="nav-item">검색</div>
-       </div>  
-     
+        <ul class="navbar_menu">
+          <li><a href="#">전문과정</a></li>
+          <li><a href="#">공개과정</a></li>
+          <li><a href="#">국제과정</a></li>
+          <li><a href="#">학위과정</a></li>
+          <li><a href="#">이용안내</a></li>
+          <li><a href="#">검색</a></li>
+        </ul>
+    </nav>
 
- <img class= "learnusimg" src="런어스1.png">
-    
- 
+    <img class="learnusimg" src="런어스1.png">
 
- <div class ="announcements">
-        <div class="announce">
-            <div class="announcetitle">
-                공지사항
+    <div class="firstbox">
+        <div class="notice">
+            <div class="notice_title">공지사항</div>
+            <a href=#><div class="notice_add">더보기</div></a>
+
+            <div class="notice_cal">
+                <div class="notice_cal_day">10</div>
+                <div class="notice_cal_yearmonth">2022-04</div>
             </div>
-            
-            <div class="announceevent">
-                런어스 4월 이벤트 안내
-            </div>
+
             <hr>
-            
-            
-                <div class="announcetext">
-                    ⚫ 타대학 학점 교류생 이용안내</div>
-                <div class="announcedate">2022-2-2</div>
-            
-                <div class="announcetext">
-                    ⚫ 오류 해결방법</div>
-                <div class="announcedate">2022-2-2</div>
 
-                <div class="announcetext">
-                    ⚫ 타대학 학점 교류생 이용안내</div>
-                <div class="announcedate">2022-2-2</div>
-            
-                <div class="announcetext">
-                    ⚫ 오류 해결방법</div>
-                <div class="announcedate">2022-2-2</div>
-                
+            <ul class="list">
+                <li>
+                    <a href=# class="title">타대학 학점교류생 이용안내</a> 
+                    <span class="date">2022-02-24</span>
+                </li>
+                <li>
+                    <a href=# class="title">Solutions for login errors</a> 
+                    <span class="date">2022-02-10</span>
+                </li>
+                <li>
+                    <a href=# class="title">재학생 로그인 오류 시 해결 방법</a> 
+                    <span class="date">2022-02-10</span>
+                </li>
+                <li>
+                    <a href=# class="title">LearnUs 교육과정 안내</a> 
+                    <span class="date">2022-01-24</span>
+                </li>
+                <li>
+                    <a href=# class="title">LearnUs 회원가입 절차 안내</a> 
+                    <span class="date">2022-01-24</span>
+                </li>
+                <li>
+                    <a href=# class="title">LearnUs 연세대학교 동문 인증방법 안내</a> 
+                    <span class="date">2021-12-27</span>
+                </li>
+            </ul>
+
         </div>
-        <div class="announce">
-         <div class="announcetitle">
-             홍보영상
-         </div>
-         <hr>
-         <div>
-            <img class="learnusimg2" src="런어스2.png">
-         </div>
- </div>      
-    </div>
-    </div>
-    
-    <div class="sectioncenter">
-        
-            <div class="searchbar">
-                <p>Search</p>
-                <form>
-        
-                    <textarea class="textareasize" name="search" cols="60" rows="1" placeholder="검색어를 입력하세요"></textarea>
-                
-        
-                    <button class="searchbutton">검색</button>
-                    <button class="searchbutton">상세검색</button>
-                </form>
-            </div>
-
-    </div>    
-    
-        <div class="announcetitle">
-            인기강좌
+        <div class="video">
+            <p>홍보영상</p>
+            <iframe width="500" height="260" src="https://www.youtube.com/embed/idquZAy5pPw?version-2&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    
         
-    
-        <div class="classflex">
-    
-            <div class="class">
-    
+    </div>
+    <div class="search">
+        <div class="searchlogo">
+            Search
+        </div>
+        <input class="formsearch" id="query" name="q" placeholder="검색어를 입력하세요.">
+        <button class="formsearch_button1">검색</button>
+        <button class="formsearch_button2">상세 검색</button>  
+    </div>
 
-                <img class="learnusimg2" src="런어스2.png">
+    <div class="popular_class">인기강좌</div>
 
-                <div class="classtitle">
-                    프론트엔드의 이해/류호산/연세대멋사교수
-                </div>
+    <div class="secondbox">
         
-                <div class="classcolor">
-                    <div class="classstat">
-                        모집중
-                    </div>
+        
 
-                    <div class="classdate">
-                     2022.1.1~9999.1.1
-                    </div>
-                </div>
-                
+        <div class="class1">
+            <img class="classimg" src="런어스2.png">
+            <div class="class_discribe">
+                연세인생학교
             </div>
-    
-            <div class="class">
-    
-
-                <img class="learnusimg2" src="런어스2.png">
-
-                <div class="classtitle">
-                    프론트엔드의 이해/류호산/연세대멋사교수
-                </div>
-        
-                <div class="classcolor">
-                    <div class="classstat">
-                        모집중
-                    </div>
-
-                    <div class="classdate">
-                     2022.1.1~9999.1.1
-                    </div>
-                </div>
-                
+            <div class="class_situation">
+                <p>모집중</p>
+                <p class="class1_date">2022-03-28~2023-03-28</p>
             </div>
-            <div class="class">
-    
-
-                <img class="learnusimg2" src="런어스2.png">
-
-                <div class="classtitle">
-                    프론트엔드의 이해/류호산/연세대멋사교수
-                </div>
-        
-                <div class="classcolor">
-                    <div class="classstat">
-                        모집중
-                    </div>
-
-                    <div class="classdate">
-                     2022.1.1~9999.1.1
-                    </div>
-                </div>
-                
-            </div>
-            <div class="class">
-    
-
-                <img class="learnusimg2" src="런어스2.png">
-
-                <div class="classtitle">
-                    프론트엔드의 이해/류호산/연세대멋사교수
-                </div>
-        
-                <div class="classcolor">
-                    <div class="classstat">
-                        모집중
-                    </div>
-
-                    <div class="classdate">
-                     2022.1.1~9999.1.1
-                    </div>
-                </div>
-                
-            </div>
-    
         </div>
 
-
-    </div>
-    
-    
-
-<footer>
-    <div class="footertitle">
-        LearnUs
-    </div>
-    <div class="footertextright">
-        <div class="footertext">
-            <button>문제가 있나요?</button>
+        <div class="class1">
+            <img class="classimg" src="런어스2.png">
+            <div class="class_discribe">
+                연세인생학교
+                <br>
+                프론트엔드의 인생은 고달프네요
+            </div>
+            <div class="class_situation">
+                <p>모집중</p>
+                <p class="class1_date">2022-03-28~2023-03-28</p>
+            </div>
         </div>
-        <div class="footertext">개인정보처리방침</div>
-       
 
+        <div class="class1">
+            <img class="classimg" src="런어스2.png">
+            <div class="class_discribe">
+                연세인생학교
+            </div>
+            <div class="class_situation">
+                <p>모집중</p>
+                <p class="class1_date">2022-03-28~2023-03-28</p>
+            </div>
+        </div>
+        <div class="class1">
+            <img class="classimg" src="런어스2.png">
+            <div class="class_discribe">
+                연세인생학교
+            </div>
+            <div class="class_situation">
+                <p>모집중</p>
+                <p class="class1_date">2022-03-28~2023-03-28</p>
+            </div>
+        </div>
     </div>
-
     
-
-</footer>
+    <footer class="footerbar">
+        <div class="footerlogo">
+            <a href=#>LearnUs</a>
+        </div>
+        
+        <div class="footertextright">
+            <div class="footertext">
+                <button>문제가 있나요?</button>
+            </div>
+            <div class="footertext">개인정보처리방침</div>
+           
+    
+        </div>
+    
+    </footer>
 
 </body>
-
 </html>
