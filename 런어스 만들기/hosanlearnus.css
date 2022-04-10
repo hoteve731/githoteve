@@ -265,7 +265,7 @@
     background-color: rgb(184, 184, 184);
     margin: 20px;
     border-radius: 5px 5px;
-    border: 1px black solid;
+    border: 0.3px rgb(92, 92, 92) solid;
 }
 
 .classimg {
