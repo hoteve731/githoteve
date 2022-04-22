@@ -33,8 +33,8 @@ while True:
         print()
 
         randomnumber = [1,2,3,4,5]
-        foodnumber = random.choice(list(randomnumber))
+        foodnumber = int(random.choice(list(randomnumber)))-1
         
 
-        print('오늘의 메뉴는', int(foodnumber)+1, '번째 메뉴인', foodlist[foodnumber], '입니다' )
+        print('오늘의 메뉴는', foodnumber + 1, '번째 메뉴인', foodlist[foodnumber], '입니다' )
         break
