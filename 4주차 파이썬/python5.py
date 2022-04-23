@@ -12,13 +12,21 @@ while True:
     if menu not in foodlist:
         foodlist.append(menu)
         print ('현재 메뉴 수 = ', len(foodlist))
+        print ()
     else:
         print ('이미 있는 메뉴에요! 다른 메뉴를 입력해주세요') 
         print ('현재 메뉴 수 = ', len(foodlist))
+        print()
         continue
         
     
     if len(foodlist) > 4:
+        print('3')
+        time.sleep(1)
+        print('2')
+        time.sleep(1)
+        print('1')
+        time.sleep(1)
         print()
         print(foodlist)
         print('과연 오늘의 메뉴는?')
@@ -36,5 +44,5 @@ while True:
         foodnumber = int(random.choice(list(randomnumber)))-1
         
 
-        print('오늘의 메뉴는', foodnumber + 1, '번째 메뉴인', foodlist[foodnumber], '입니다' )
+        print('오늘의 메뉴는', foodnumber + 1, '번째 메뉴,', foodlist[foodnumber], '입니다.' )
         break
