@@ -45,4 +45,5 @@ while True:
         
 
         print('오늘의 메뉴는', foodnumber + 1, '번째 메뉴,', foodlist[foodnumber], '입니다.' )
+        print()
         break
