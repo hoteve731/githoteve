@@ -1,3 +1,5 @@
+# 딜리트 하지 않고, 중복일 경우 메뉴를 리스트에 추가 자체를 시키지 않는 버전
+
 import random
 import time
 
