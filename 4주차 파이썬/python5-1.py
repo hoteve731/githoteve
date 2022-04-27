@@ -15,6 +15,9 @@ while True:
         print ()
     else:
         print ('이미 있는 메뉴에요! 다른 메뉴를 입력해주세요') 
+        foodlist.remove(menu)
+        foodlist.append(menu)
+
         print ('현재 메뉴 수 = ', len(foodlist))
         print()
         continue
