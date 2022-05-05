@@ -14,4 +14,4 @@ message['To'] = "ksjoon28@naver.com"
 smtp = smtplib.SMTP_SSL(SMTP_SEVER,SMTP_PORT)#원하는 메일'서버에 연결'할 수 있게 해줌
 smtp.login("fbghtks1000@gmail.com","fbghtks731!")
 smtp.send_message(message)
-smtp.quit() #보낸 이후에 서버 연결을 끊어줌
+smtp.quit() #보낸 이후에 서버 연결을 끊음
