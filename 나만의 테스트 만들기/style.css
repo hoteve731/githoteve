@@ -1,0 +1,170 @@
+body{
+    background-image: url('wallpaper3.jpeg');
+    background-size: 100%;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    color: rgb(207, 236, 174);
+}
+
+h1{
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    /* border: 1px solid rgba(255,255,255,0.3); */
+    width: 100%;
+    margin: 0 auto;
+    color: rgb(71, 2, 85);
+}
+
+h3{
+    font-size: 13px;
+    color: rgb(232, 236, 240);
+    padding: 40px;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(48, 43, 43, 0.5);
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    /* border: 1px solid rgba(255,255,255,0.3); */
+    margin-top: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h4{
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    width: 40%;
+    margin: 0 auto;
+    color: rgb(41, 61, 85);
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 15px;
+    color: rgb(54, 37, 65);
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(211, 178, 212, 0.5);
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    /* border: 1px solid rgba(255,255,255,0.3); */
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+.question{
+    display: none;
+}
+
+.result{
+    display: none;
+}
+
+#img {
+    width: 300px;
+    
+    margin: 0 auto;
+}
+
+.share{
+    margin: 0 auto;
+}
+
+.kakao_ad{
+    width: 320px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.banner-img{
+    width: 320px;
+}
+
+#runbutton{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(75, 7, 63, 0.5);
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    border: 1px solid rgba(250, 244, 244, 0.3);
+    color: rgb(228, 221, 247);
+    
+}
+
+.mbtidropdown{
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(240, 188, 188, 0.5);
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.dropdown{
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h5{
+    font-size: 15px;
+    color: rgb(92, 20, 64);
+}
+
+#img{
+    border-radius: 8px;
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    
+}
+
+#coverimg{
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    
+}
+
+#made{
+    text-align: center;
+    color: rgb(240, 227, 234);
+    font-size: 10px;
+    width: 30%;
+    backdrop-filter: blur(20px);
+    background-color: rgba(43, 40, 40, 0.5);
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    
+}
+
+/* 점 안찍고 쓰면 그 이름 모든 태그에 적용
+점 찍고 쓰는건 특정 클래스 . 샵은 특정 아이디에 적용*/

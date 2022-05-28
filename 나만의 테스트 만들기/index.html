@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>친구가 생각하는 내 MBTI는?</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+    </style>
+    <meta name="description" content="친구와 내가 생각하는 MBTI 비교 테스트- Made by hoteve">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="친구와 내가 생각하는 MBTI 비교 테스트">
+    <meta property="og:description" content="친구와 내가 생각하는 MBTI 비교 테스트. Made by hoteve">
+    <meta property="og:image" content="https://mbticompair.netlify.app/egg.jpeg">
+    <meta property="og:url" content="https://mbticompair.netlify.app/">
+</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container"> 
+    <article class = 'start'>
+        <h1 class="mt-3">나와 친구가 생각하는 <br>MBTI는 얼마나 다를까?</h1> 
+        <h2 id = 'made'>Made by <a href="https://www.instagram.com/hoteve731/"target="_blank">@hoteve731</a></h2>
+
+        <div class = 'coverimg'>
+            <img id = 'coverimg' src="cover.jpeg" class="mt-3" alt="cover">
+        </div>
+
+        <div class = 'mbtidropdown'>
+            <h5>🤗 본인이 생각하는 자신의 MBTI를 선택하세요.</h5>
+                <select id = 'dropdown' class="dropdown">
+                    <option value="INTP" label="INTP" selected></option>
+                    <option value="ISTJ" label="ISTJ" ></option>
+                    <option value="ISFP" label="ISFP" ></option>
+                    <option value="ISFP" label="ISFP" ></option>
+                    <option value="INTJ" label="INTJ" ></option>
+                    <option value="ISTP" label="ISTP" ></option>
+                    <option value="ISFP" label="ISFP" ></option>
+                    <option value="INFP" label="INFP" ></option>
+                    <option value="ESTP" label="ESTP" ></option>
+                    <option value="ESFP" label="ESFP" ></option>
+                    <option value="ENFP" label="ENFP" ></option>
+                    <option value="ENTP" label="ENTP" ></option>
+                    <option value="ESTJ" label="ESTJ"></option>
+                    <option value="ESFJ" label="ESFJ"></option>
+                    <option value="ENFJ" label="ENFJ"></option>
+                    <option value="ENTJ" label="ENTJ"></option>
+                </select>
+        </div>
+
+        
+        
+        <button id='runbutton' type="button" class="btn btn-info mt-5" onclick="begin();"> ➡ 테스트 시작 ⬅ <br>(누르고 친구에게<br> 핸드폰 넘겨주기)</button>
+    </article>
+
+    <!-- 왜 그냥 되는가? '부트스트랩 클래스 기능'. mt-5는 마진탑1~5 -->
+    <article class ='question'>
+        <div class="progress mt-5">
+            <div class="progress-bar" role="progressbar" style="width: 100/12*1%" ></div>
+        </div>
+        <h2 id = 'title' class="text-center mt-5">문제</h2>
+        <input id="type" type="hidden" value="EI">
+        <button id ='A'type="button" class="btn btn-primary mt-5">Primary</button>
+        <button id ='B'type="button" class="btn btn-primary mt-5">Primary</button>
+
+    </article>
+    <article class="result">
+        <img id = 'img' src='이미지' class="mt-5" alt="animal">
+        <h2 id = 'animal'class = 'text-center'>엠비티아이이름</h2>
+        <h3 id = 'explain' class = 'text-center'>설명</h3>
+
+        <h2 id = 'mymbti' class="text-center">당신이 고른 mbti</h2>
+        <h3 id = 'friendsmbti' class = 'text-center'>설명</h3>
+
+        <h4 class="mt-5">새로고침으로 <br>다시하기</h4>
+        
+        
+        
+        
+            
+        
+        <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="share addthis_inline_share_toolbox"></div>
+    </article>
+
+    <!-- <article class = 'kakao_ad mt-5'>
+        <ins class="kakao_ad_area" style="display:none;" 
+        data-ad-unit    = "DAN-gDwXgvTGToB2brHd" 
+        data-ad-width   = "300" 
+        data-ad-height  = "100"></ins> 
+    </article> -->
+
+    <a class='mt-5 mb-5 banner'href="https://www.codelion.net/catalog/Q291cnNlTm9kZTpqbW9r?utm_source=animal_test&utm_medium=web_lecture&utm_campaign=hosan731">
+        <img class='banner-img' src="banner.png" alt="banner">
+    </a>
+    
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    
+
+    <input type="hidden" id="EI" value="0">
+    <input type="hidden" id="SN" value="0">
+    <input type="hidden" id="TF" value="0">
+    <input type="hidden" id="JP" value="0">
+    <!-- 이런 점수 창은 내부적으로는 있지만 실제로는 보이지 않아야 함. 히든 태그 사용 -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+    <script>
+        var num = 1;
+        var q = {
+            1: {'title': '이 친구는 여러 사람과 두루 대화하는 것을 즐기나요?','type':'EI','A':'그렇다.','B':'아니다. 주로 친한 소수와만 대화한다.'},
+            2: {'title': '이 친구와 단둘이 대화할 때, <br>누가 더 많이 말을 하는 편인가요?','type':'EI','A':'이 친구','B':'테스트를 하고 있는 본인'},
+            3: {'title': '이 친구가 저녁 술 약속을 잡았는데, <br>갑자기 상대방 사정으로 취소되었다고 합니다. <br>그 때 이 친구는 은근히 좋아할까요, 아쉽기만 할까요?','type':'EI','A':'너무 아쉽기만 할 것이다.','B':'혼자만의 시간도 은근 기대될 것이다.'},
+            4: {'title': '이 친구는 노래를 들을 때 <br>둘 중 어느 것을 더 중요하다고 생각할까요?','type':'SN','A':'멜로디','B':'가사'},
+            5: {'title': '이 친구가 요리를 할 때 <br>어떤 방식으로 재료의 양을 맞출 것 같나요?','type':'SN','A':'레시피대로 정량 계량','B':'손대중, 눈대중'},
+            6: {'title': '이 친구가 소설을 쓴다고 하면 잘 쓸 것 같나요?','type':'SN','A':'절대 아니다. 대신 보고서는 잘 쓸 것 같다.','B':'대작을 쓸 수 있을 것 같다.'},
+            7: {'title': '이 친구에게 칭찬을 할때, <br>어떤 유형의 칭찬이 더 잘 먹힐 것 같나요?','type':'TF','A':'결과적, 실력적인 칭찬(잘했다!)','B':'과정적, 노력을 인정하는 칭찬(열심히 했다!)'},
+            8: {'title': '테스트를 하고 있는 본인이 차 사고가 났다고 합니다. <br>소식을 들은 이 친구의 첫 마디는 <br>어느 쪽에 더 가까울 것 같나요?','type':'TF','A':'병원 갔어? 보험처리는 어떻게 됐어?','B':'괜찮아? 다치진 않았어?'},
+            9: {'title': '리액션과 질문 두 가지를 비교했을 때, <br>이 친구는 일상 대화에서 어느 쪽을 더 많이 하나요?','type':'TF','A':'질문','B':'리액션'},
+            10: {'title': '이 친구가 시험공부를 할 때,<br> 스케줄과 계획을 일주일 단위 이상으로 <br>세우는 편이라고 생각하시나요?','type':'JP','A':'그렇다. 대단한 놈이다.','B':'아니다. 벼락치기 쪽에 더 가깝다.'},
+            11: {'title': '이 친구와 서로 집에서 10분 거리에 떨어져 있는 곳에서<br> 만날 약속을 잡았습니다. <br>과연 이 친구는 약속 얼마 전부터<br> 약속을 인지하고 준비할까요?','type':'JP','A':'최소 몇 시간 전부터 인지하면서 귀찮아 할 것 같다.','B':'한 5분 전부터나 슬슬 귀찮아할 것 같다.'},
+            12: {'title': '이 친구는 규칙적이고 조직적인 생활(군대, 회사 등)에 <br>잘 적응할 것 같나요?','type':'JP','A':'적응은 물론 오히려 좋아할 것 같다.','B':'절대 못 하거나 적응은 해도 행복하지 않을 것 같다.'},
+        }
+        var result = {
+            "ISTJ":{"animal":"친구가 고른 당신의 MBTI는 <br>ISTJ",'explain':'당신은 논리주의자입니다. <br>집중력이 강하고 보수적인 경향이 있습니다. 다소 내향적이고 규칙을 잘 준수합니다. 직관력이 매우 부족한 편이기에 전체를 고려하는 노력이 필요합니다.',  'img':'ISTJ.png'},
+            "INFP":{"animal":"친구가 고른 당신의 MBTI는 <br>INFP",'explain':'당신은 중재자입니다. <br>당신은 겉으로는 차분하고 낭만적이지만 속으로는 신념이 깊고 인류를 애정합니다. 다만 큰 그룹에서는 에너지가 쉽게 고갈되는 경향이 있습니다.', 'img':'INFP.png'},
+            "INFJ":{"animal":"친구가 고른 당신의 MBTI는 <br>INFJ",'explain':'당신은 선지자입니다. <br>예언자와도 같이 통찰력과 직관력이 매우 뛰어난 정신적 지도자와도 같습니다. 나무보단 숲을 보고 한곳에 몰두하며, 감성적이고 내적인 성격을 가지고 있다고 봅니다.', 'img':'INTJ.png'},
+            "ISTP":{"animal":"친구가 고른 당신의 MBTI는 <br>ISTP",'explain':'당신은 실용주의자입니다. <br>당신은 과묵하며, 절제된 호기심으로 살아갑니다. 최대한 에너지 소비를 하지 않고 사실적인 자료를 인과적으로, 또는 객관적으로 파악하기 좋아하는 백과사전과 같습니다.', 'img':'ISTP.png'},
+            "ISFP":{"animal":"친구가 고른 당신의 MBTI는 <br>ISFP",'explain':'당신은 예술가입니다. <br>당신은 언제나 실험적인 행위를 통해 전통과 관습에 도전하며, 다양한 영감을 받아 다채롭고 감각적인 삶을 살아갑니다. 당신은 굉장히 즉흥적이고 탐험이나 실험 정신이 뛰어나기도 합니다.', 'img':'ISFP.png'},
+            "INTP":{"animal":"친구가 고른 당신의 MBTI는 <br>INTP",'explain':'당신은 사색가입니다. <br>당신은 평범함을 거부하며 자신만의 창의성, 지적 호기심에 자부심을 갖고 있습니다. 모든 것을 분석하고 연구하며 이론화 하는 것을 즐기고 이런저런 몽상에 하루종일 몰두합니다. 타인의 불평불만을 잘 이해하지 못하고 실패를 두려워하기에, 스스로를 믿을 필요가 있습니다!', 'img':'INTP.png'},
+            "ESTP":{"animal":"친구가 고른 당신의 MBTI는 <br>ESTP",'explain':'당신은 사업가입니다. <br>선입견이 별로 없고 현실 감각과 문제해결력이 뛰어날 뿐만 아니라 센스있고 유머러스 합니다. 긴 설명보다는 경험적인 것을 선호하며, 추상적인 것보단 현실적이고 실용적인 것을 분석하는 것을 즐깁니다.', 'img':'ESTP.png'},
+            "ESFP":{"animal":"친구가 고른 당신의 MBTI는 <br>ESFP",'explain':'당신은 연예인입니다. <br>사교적이고 활동적이며 적응력이 풍부합니다. 감정적이고 충동적인 경향을 가지며, 언제나 즐거움을 추구하고, 정이 많습니다.', 'img':'ESFP.png'},
+            "ENFP":{"animal":"친구가 고른 당신의 MBTI는 <br>ENFP",'explain':'당신은 활동가입니다. <br>당신은 정열적이고 활기가 넘치고 창의적입니다. 분위기메이커 역할을 잘하나 지나치게 예민하고 감정적이 될 수 있습니다. 타인의 관심을 요구하기에 끊임없이 타인과 비교하고 쉽게 우울해질 수도 있습니다. 조심하세요!', 'img':'ENFP.png'},
+            "ENTP":{"animal":"친구가 고른 당신의 MBTI는 <br>ENTP",'explain':'당신은 변론가입니다. <br>당신은 기존의 체제 자체를 뒤집거나 혁신할 수 있는 잠재력을 가지고 있습니다. 발명적이고 혁명적이지만 위계질서가 엄격하고 경직된 사회는 싫어하며 분야에 쉽게 질려 넓고 얕게 팝니다. 또한 극단적으로 성공하거나 극단적으로 실패하는 성향이 강하기도 합니다.', 'img':'ENTP.png'},
+            "ESTJ":{"animal":"친구가 고른 당신의 MBTI는 <br>ESTJ",'explain':'당신은 관리자입니다. <br>조직관리 분야에 가장 뛰어난 재능을 가졌으며 지도자로서 프로젝트의 목표를 설정하고, 지시하여 이행하는 능력이 탁월합니다. 다만 감정을 고려하는 능력이 부족하여 딱딱하게 사람을 대하기에 자신과 타인의 감정을 충분히 고려해야 합니다.', 'img':'ESTJ.png'},
+            "ESFJ":{"animal":"친구가 고른 당신의 MBTI는 <br>ESFJ",'explain':'당신은 외교관입니다. <br>두말할 필요도 없이 사회에 적응을 잘 하며, 타고난 협력자로서 동료애가 많고 친절하며 능동적입니다. 굉장히 사회적인 편에 속합니다.', 'img':'ESFJ.png'},
+            "ENFJ":{"animal":"친구가 고른 당신의 MBTI는 <br>ENFJ",'explain':'당신은 사회운동가입니다. <br>당신은 온화하고 적극적이며, 타인에게 진지한 관심을 가지고 공동선을 위해 타인의 의견에 잘 동의합니다. 모든 유형 중 상대방에게 가장 부드럽게 말을 잘 하며, 한국에서 가장 보기 드문 유형이기도 합니다.', 'img':'ENFJ.png'},
+            "ENTJ":{"animal":"친구가 고른 당신의 MBTI는 <br>ENTJ",'explain':'당신은 지도자입니다. <br>지도력과 통솔력이 있으며 지식에 대한 욕구도 있습니다. 사회적으로 가장 성공할 확률이 높으며, 기업가나 정치가, 전문직, 창업가 쪽에 많이 분포합니다. 사람을 잘 다루며 어려운 도전을 마다하지 않기 떄문입니다.', 'img':'ENTJ.png'},
+            "ISFJ":{"animal":"친구가 고른 당신의 MBTI는 <br>ISFJ",'explain':'당신은 조력가입니다. <br>조용하고 차분하며 관계를 맺기 가장 믿음직스러운 유형입니다. 완벽주의자 성향이 있으며, 감정을 파악하는데 능숙하지만 표현하는데는 서툰 편입니다.', 'img':'ISFJ.png'},
+            "INTJ":{"animal":"친구가 고른 당신의 MBTI는 <br>INTJ",'explain':'당신은 전략가입니다. <br>또한 건축가와도 같은 정확하고 계산된 움직임과 풍부한 지식을 소유하고 있습니다. 당신은 풍부한 상상력의 소유자이며, 결단력이 있고 쓸데없는데 에너지를 낭비하지 않습니다.', 'img':'INTJ.png'},
+        }
+        function begin(){//함수 제이쿼리로 기능 만들기
+            $(".start").hide();
+            $(".question").show();
+            next(); //시작 누르자마자 바로 문제로 넘어가게 함
+        }
+
+        $('#A').click(function(){
+            var type = $('#type').val();
+            var preValue = $('#'+type).val(); //특정 아이디의 값을 가져옴. 지금은 EI, 값은 0(변하기 이전 값). 그런데 지금 스트링 형이라 인트로 바꿔줘야 함
+            $('#'+type).val(parseInt(preValue)+1);
+            next();
+        });
+//A 아이디를 클릭했을 때(아이디는 샵)
+        $('#B').click(function(){
+            next();
+        }); //B 눌렀을땐 값 저장 말고 그냥 넘어가게
+        
+        function next(){
+            if (num == 13){
+                $('.question').hide();
+                $('.result').show();
+                var mbti = '';
+                ($('#EI').val() <2) ? mbti+='I':mbti+='E';
+                ($('#SN').val() <2) ? mbti+='N':mbti+='S';
+                ($('#TF').val() <2) ? mbti+='F':mbti+='T';
+                ($('#JP').val() <2) ? mbti+='P':mbti+='J';
+                //이프엘스는 삼항연산자를 쓰면 매우 짧게 가능하다. 
+                $('#img').attr('src',result[mbti]["img"]);
+                $('#animal').html(result[mbti]['animal']);
+                $('#explain').html(result[mbti]['explain']);
+                $('#mymbti').html('당신이 고른 본인의 MBTI는 '+$('#dropdown').val());
+                $('#friendsmbti').html(result[$('#dropdown').val()]['explain']);
+                
+
+                let elem = document.querySelectorAll(".drop-down");
+
+                
+                
+                
+
+            } else {
+                $('.progress-bar').attr('style','width: calc(100/12*'+num+'%');
+                $('#title').html(q[num]['title']);
+                $('#type').val(q[num]['type']);
+                $('#A').html(q[num]['A']);
+                $('#B').html(q[num]['B']);
+                num++;
+            }
+            
+//누를때마다 다음 문제를 불러오게 됨
+        }
+    </script> 
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-628ba907ad63a96e"></script>
+</body>
+</html>
