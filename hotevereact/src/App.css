@@ -15,6 +15,7 @@
   color: rgb(175, 88, 122);
   width: 80%;
   margin: 0 auto;
+  padding: 10px;
   margin-top: 20px;
   margin-bottom: 15px;
   text-align: center;
@@ -45,4 +46,19 @@
 
 .nav{
   text-align: center;
+}
+
+.musicname{
+  color: rgb(199, 132, 132);
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 20px;
+  border: none black;
+  border-radius: 8px;
+  width: 50%;
+  background-color: rgb(241, 226, 235);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+  
 }
