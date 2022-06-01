@@ -1,38 +1,45 @@
-import React, { useState} from 'react';
+import React from 'react';
 import "./App.css";
+import Counter from './Counter';
+import Music from './Music';
+import { Link, Route, Routes } from "react-router-dom";
+import page1 from './pages/page1';
+import page2 from './pages/page2';
+import Home from './pages/Home';
+import menubar from './pages/menubar';
 
-function Counter () {
-    const [num, setNum] = useState(0);
-    function onClick(){
-        setNum(num+1)
-    };
-    function onclick2(){
-      setNum(num-1)
-    };
-    return(
-      <>
-        <div className='p1'>
-            <h1 className='hi'>숫자세기 : {num} </h1>
-            <button className='button' onClick={onClick}>+1</button>
-            <button className='button' onClick={onclick2}>-1</button>
-              
-        </div>
-      </>
-    );
-};
-export default Counter;
+const App = () => {
+  return(
+    <>
+     <div className='navbutton'>
+      <button><Link to = '/page1'>페이지1</Link></button>
+      <button><Link to = '/page2'>페이지2</Link></button>
+      <button><Link to = '/home'>홈</Link></button>
+  
+    </div>
+    <Routes>
+      <Route path = '/' element = {<menubar />}>
+        <Route path = '/home' element = {<Home />}></Route>
+        <Route path = '/page1' element = {<page1 />}></Route>
+        <Route path = '/page2' element = {<page2 />}></Route>
+      </Route>
+    </Routes>
+
+   
+    
+    <Counter />
+    <Music />
+      
+    </>
+    
+  );
+}
+
+export default App;
 
 
 
-// function musiclist() {
-//   let [music, setMusic] = useState(["I've - Love Dive",'(G)-Idle - Tomboy','Le Sserafim - FEARLESS']);
-//   return(
-//     <div>
-//       <h1>저의 최애 곡들을 소개합니다!</h1>
-//       {setMusic}
-//     </div>
-//   );
-// };
+
 
 
 

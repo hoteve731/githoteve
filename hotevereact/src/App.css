@@ -3,7 +3,7 @@
   background-color: rgb(197, 228, 218);
   font-weight: bold;
   margin: 5px;
-  border-radius: 3px;
+  border-radius: 8px;
   height: 30px;
   
 }
@@ -15,4 +15,13 @@
 
 .p1{
   text-align: center;
+}
+
+.musiclist{
+  text-align: center;
+}
+
+.navbutton{
+  text-align: center;
+  margin: 10px;
 }
