@@ -1,11 +1,11 @@
 import React from 'react';
-
-
+import Counter from '../Counter';
+import Music from '../Music';
 const Home = () => {
     return (
         <div>
-            <h1>홈입니다</h1>
-            
+            <Counter />
+            <Music />
         </div>
     );
 };

@@ -1,15 +1,26 @@
+
 .button{
-  color: brown;
-  background-color: rgb(197, 228, 218);
+  color: rgb(243, 212, 230);
+  background-color: rgb(134, 56, 95);
   font-weight: bold;
   margin: 5px;
   border-radius: 8px;
+  border-style: outset;
   height: 30px;
+  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
   
 }
 
 .hi{
-  color: rgb(81, 100, 100);
+  color: rgb(175, 88, 122);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: rgba(238, 182, 182, 0.5);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
   
 }
 
@@ -22,6 +33,16 @@
 }
 
 .navbutton{
+
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 8px;
+  height: 30px;
+  background-color: rgb(216, 144, 164);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+  border-style: outset;
+}
+
+.nav{
   text-align: center;
-  margin: 10px;
 }

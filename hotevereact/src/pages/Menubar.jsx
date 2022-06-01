@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
-const menubar = () => {
+const Menubar = () => {
     return (
         <div>
             <button><link to = '/home'>홈</link></button>
@@ -13,4 +13,4 @@ const menubar = () => {
     );
 };
 
-export default menubar;
+export default Menubar;
